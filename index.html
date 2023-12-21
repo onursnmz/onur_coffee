@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Onur Coffee</title>
+</head>
+<body>
+	<section>
+    <div class="circle"></div>
+    <header>
+        <a href="#"><img src="s3.png" class="logo" /></a>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Contact</a></li>
+           
+        </ul>
+    </header>
+
+    <div class="content">
+        <div class="textBox">
+            <h2>It's not just Coffee<br />It's <span id="output"> Onur Coffee</span></h2>
+            <p>MAKE EVERY SIP MORE REWARDING <br />
+                Join Starbucks Rewards™ to earn Gold level benefits like free drinks and food,
+                get free refills, pay and order with your phone, and more.
+            </p>
+            <a href="#" id="learnmore">Learn More</a>
+        </div>
+
+        <div class="imgBox">
+            <img src="filtre.png"
+                alt="" class="starbucks">
+        </div>
+    </div>
+
+    <ul class="thumbnails">
+        <li>
+            <img id="changeGreen" src="filtre.png" onclick="imageSlider('filtre.png');
+                        changeCircleColor('orange')
+                        changeSpanColor('orange')">
+        </li>
+         <li>
+            <img id="changeyellow" src="turkish.png" onclick="imageSlider('turkish.png');
+                        changeCircleColor('green')
+                        changeSpanColor('green')">
+        </li>
+        <li>
+            <img id="changePink1" src="white.png" onclick="imageSlider('white.png');
+                        changeCircleColor('red')
+                        changeSpanColor('red')">
+        </li>
+        <li>
+            <img id="changePink2" src="black.png" onclick="imageSlider('black.png');
+                        changeCircleColor('darkblue')
+                        changeSpanColor('darkblue')">
+        </li>
+    </ul>
+
+    <ul class="social" id="social">
+        <li><a href="#" target="_blank"><img
+                    src="https://starbucks-landing-page.netlify.app/public/images/facebook.png"></a></li>
+        <li><a href="#" target="_blank"><img
+                    src="https://starbucks-landing-page.netlify.app/public/images/twitter.png"></a></li>
+        <li><a href="#" target="_blank"><img
+                    src="https://starbucks-landing-page.netlify.app/public/images/instagram.png"></a></li>
+    </ul>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
+
